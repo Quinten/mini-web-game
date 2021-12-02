@@ -5,8 +5,7 @@
   "scripts": {
     "start": "parcel --dist-dir ./public",
     "build": "rm -rf public;parcel build",
-    "zip": "rm -rf game.zip;cd public;zip -r ../game.zip index.html sw.js;cd ..;stat -f%z game.zip;",
-    "deploy": "npm run build;git add public;git commit -m \"New build\";git push;git subtree push --prefix public origin gh-pages;npm run zip;"
+    "zip": "npm run build;rm -rf game.zip;cd public;zip -r ../game.zip index.html sw.js;cd ..;stat -f%z game.zip;"
   },
   "source": ["src/index.html", "src/sw.js"],
   "targets": {
