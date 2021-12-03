@@ -19,7 +19,7 @@
     "url": "git+https://github.com/Quinten/pg.git"
   },
   "author": "Quinten",
-  "license": "Unlicense",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Quinten/pg/issues"
   },
