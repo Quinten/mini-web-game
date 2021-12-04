@@ -9,13 +9,12 @@ let update = c => {
         return;
     }
     pointer.pointing = true;
-    component.fill = (pointer.isDown) ? 'lightblue' : 'white';
     if (pointer.justUp && entity.sound !== undefined) {
         entity.sound.play = true;
     }
     if (pointer.justUp) {
         entity.data.nClicks = entity.data.nClicks + 1;
-        c.entities.system.states = ['game', 'testx'];
+        c.entities.system.states = component.next;
     }
 };
 
