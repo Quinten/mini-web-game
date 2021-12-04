@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "start": "parcel --dist-dir ./public",
-    "build": "rm -rf public;parcel build",
-    "zip": "npm run build;rm -rf game.zip;cd public;zip -r ../game.zip index.html sw.js;cd ..;stat -f%z game.zip;"
+    "start": "echo PROJECT_NAME=$npm_package_name > .env; parcel --dist-dir ./public",
+    "build": "echo PROJECT_NAME=$npm_package_name > .env; rm -rf public; parcel build",
+    "zip": "npm run build; rm -rf game.zip; cd public; zip -r ../game.zip index.html sw.js; cd ..; stat -f%z game.zip;"
   },
-  "source": ["src/index.html", "src/sw.js"],
+  "source": ["src/index.html"],
   "targets": {
     "default": {
       "distDir": "./public",
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/Quinten/pg.git"
   },
-  "author": "Quinten",
+  "author": "Quinten Clause",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Quinten/pg/issues"
