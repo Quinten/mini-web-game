@@ -28,7 +28,7 @@ export default {
             next: ['game', 'testx']
         },
         sound: {
-            melody: ['8C3', '8D3', '8G3+8']
+            melody: ['8G3', '8D3', '4C3']
         },
         data: {
             nClicks: 0
@@ -44,7 +44,8 @@ export default {
             next: ['game', 'test']
         },
         sound: {
-            melody: ['8G3', '8D3', '4C3']
+            melody: ['8C3', '8D3', '8G3+8'],
+            play: true
         },
         data: {
             nClicks: 0
