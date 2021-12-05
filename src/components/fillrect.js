@@ -13,7 +13,9 @@ let update = c => {
         entity.sound.play = true;
     }
     if (pointer.justUp) {
-        entity.data.nClicks = entity.data.nClicks + 1;
+        if (entity.data !== undefined && entity.data.nClicks !== undefined) {
+            entity.data.nClicks = entity.data.nClicks + 1;
+        }
         c.entities.system.states = component.next;
     }
 };

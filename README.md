@@ -13,7 +13,7 @@ Uses [parcel](https://parceljs.org/) as a build tool.
 - Mouse and touch controls with `pointer` component
 - Sound and music with the `sound` component
 
-No need to use an editor for images or sound. You can write it in code. Even the icons for the PWA.
+No need to use an GUI editor for images or sound. You can write it in code. Even the icons for the PWA.
 
 ## Things to mod
 
@@ -86,7 +86,7 @@ One `system` entity with a `states` component is required to call all other syst
             y: 8,
             width: 240,
             height: 240,
-            next: []
+            next: ['game']
         }
     },
     myScene: {
@@ -97,7 +97,7 @@ One `system` entity with a `states` component is required to call all other syst
 }
 ```
 
-This renders a white square that dissapears when clicked. `next: []` replaces `system.states` with an empty array.
+This renders a white square that dissapears when clicked. The line `next: ['game']` removes `myScene` from the active states.
 
 ### Adding logic
 
