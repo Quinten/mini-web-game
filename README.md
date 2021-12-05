@@ -1,6 +1,6 @@
-# pg
+# mini-web-game
 
-A canvas game generated from this template.
+A mini web game generated from this [template](https://github.com/Quinten/mini-web-game).
 
 Uses [parcel](https://parceljs.org/) as a build tool.
 
