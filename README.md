@@ -13,7 +13,7 @@ Uses [parcel](https://parceljs.org/) as a build tool.
 - Mouse and touch controls with `pointer` component
 - Sound and music with the `sound` component
 
-No need to use an GUI editor for images or sound. You can write it in code. Even the icons for the PWA.
+No need to use a GUI editor for images or sound. You can write it in code. Even the icons for the PWA.
 
 ## Things to mod
 
