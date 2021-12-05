@@ -1,7 +1,5 @@
 {
   "name": "pg",
-  "version": "0.0.1",
-  "description": "",
   "scripts": {
     "start": "echo PROJECT_NAME=$npm_package_name > .env; parcel --dist-dir ./public",
     "build": "echo PROJECT_NAME=$npm_package_name > .env; rm -rf public; parcel build",
@@ -14,16 +12,6 @@
       "sourceMap": false
     }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Quinten/pg.git"
-  },
-  "author": "Quinten Clause",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Quinten/pg/issues"
-  },
-  "homepage": "https://github.com/Quinten/pg#readme",
   "devDependencies": {
     "@parcel/transformer-inline-string": "^2.0.1",
     "parcel": "^2.0.1"
