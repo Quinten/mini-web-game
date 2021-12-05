@@ -152,6 +152,9 @@ npm run zip
 
 Runs the build and then makes a zip. Also counts the bytes of the zip.
 
+## Deploy to gh-pages with gh-actions
+
+When pushing on the master branch, a build is deployed automatically to github pages. To make it run correctly, add a secret to the settings of your repo named `ACCESS_TOKEN`. This github token should have write permissions to repos.
 
 
 
