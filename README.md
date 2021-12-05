@@ -1,6 +1,6 @@
 # pg
 
-A template for making canvas games.
+A canvas game generated from this template.
 
 Uses [parcel](https://parceljs.org/) as a build tool.
 
@@ -108,7 +108,7 @@ Use `src/components/fillrect.js` as an example of how to create logic for your c
 3. postupdate
 4. draw
 
-A component doesn't neeed to export all of them.
+A component doesn't need to export all of them.
 
 Each lifecycle method has exactly one parameter `c` which is an object with the following keys:
 
