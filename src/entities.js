@@ -9,8 +9,6 @@ export default {
     },
     viewport: {
         resize: {
-            width: 300,
-            height: 150,
             minWidth: 256,
             minHeight: 256
         }

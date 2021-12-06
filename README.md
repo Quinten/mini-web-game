@@ -70,8 +70,6 @@ One `system` entity with a `states` component is required to call all other syst
     },
     viewport: {
         resize: {
-            width: 300,
-            height: 150,
             minWidth: 256,
             minHeight: 256
         }

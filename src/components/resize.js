@@ -15,15 +15,17 @@ let preupdate = c => {
     canvas.width = w * window.devicePixelRatio;
     canvas.height = h * window.devicePixelRatio;
     let {component} = c;
-    component.width = w;
-    component.height = h;
     targetRatio = component.minWidth / component.minHeight;
     actualRatio = w / h;
     if (targetRatio < actualRatio) {
         zoom = canvas.height / component.minHeight;
+        component.width = component.minWidth * actualRatio;
+        component.height = component.minHeight;
     } else {
         zoom = canvas.width / component.minWidth;
-    }
+        component.width = component.minWidth;
+        component.height = component.minHeight / actualRatio;
+     }
     component.zoom = zoom;
 };
 
