@@ -5,7 +5,9 @@
     "build": "echo PROJECT_NAME=$npm_package_name > .env; rm -rf public; parcel build",
     "zip": "npm run build; rm -rf game.zip; cd public; zip -r ../game.zip index.html sw.js; cd ..; stat -f%z game.zip;"
   },
-  "source": ["src/index.html"],
+  "source": [
+    "src/index.html"
+  ],
   "targets": {
     "default": {
       "distDir": "./public",
@@ -14,6 +16,7 @@
   },
   "devDependencies": {
     "@parcel/transformer-inline-string": "^2.0.1",
-    "parcel": "^2.0.1"
+    "parcel": "^2.0.1",
+    "process": "^0.11.10"
   }
 }
