@@ -1,5 +1,5 @@
 import entities from './entities.js';
-import components from './components/index.js';
+import 'mini-web-game-components' as components;
 
 let systems = {};
 let systemTypes = [
