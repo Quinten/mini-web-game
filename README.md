@@ -19,11 +19,9 @@ No need to use a GUI editor for images or sound. You can write it in code. Even 
 
 ### Some variables to take care of
 
-The `name` in the `package.json`. This is used for the cache name of the service worker. Important if you upload a lot of games to the same domain.
+Change the `PROJECT_NAME` in `.env` to the name of your project. This is used in the `manifest.json`, as prefix for `localStorage` keys, the document title and the cache key for the service worker.
 
-The `title` in `src/index.html`. This is used to generate the `manifest.json` and as prefix for `localStorage` keys.
-
-The `description`, `author` and `monetization` meta tags in `src/index.html`.
+The `description` meta tag in `src/index.html`. This will also be used in the `manifest.json`.
 
 The inline `background` style of the `body` in `src/index.html`. This is also used to generate the `manifest.json`.
 
