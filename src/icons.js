@@ -17,8 +17,8 @@ let addIcons = _ => {
     touch.rel = 'apple-touch-icon';
     touch.href = icon;
     document.head.appendChild(touch);
-    let name = document.title;
-    let short_name = document.title;
+    let name = (process === undefined) ? 'mwg' : process.env.PROJECT_NAME;
+    let short_name = document.title = name;
     let description = document.querySelector('[name=description]').getAttribute('content');
     let theme_color = document.body.style.background;
     let tc = document.createElement('meta');

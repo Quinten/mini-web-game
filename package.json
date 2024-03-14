@@ -1,8 +1,8 @@
 {
   "name": "mini-web-game",
   "scripts": {
-    "start": "echo PROJECT_NAME=$npm_package_name > .env; parcel --dist-dir ./public",
-    "build": "echo PROJECT_NAME=$npm_package_name > .env; rm -rf public; parcel build",
+    "start": "parcel --dist-dir ./public",
+    "build": "rm -rf public; parcel build",
     "zip": "npm run build; rm -rf game.zip; cd public; zip -r ../game.zip index.html sw.js; cd ..; stat -f%z game.zip;"
   },
   "source": [
