@@ -97,6 +97,8 @@ This renders a white square that dissapears when clicked. The line `next: ['game
 
 ### Adding logic
 
+Todo: update this section
+
 When you add a new component, do not forget to import and export it in `src/components/index.js`.
 
 Use `src/components/fillrect.js` as an example of how to create logic for your components. The component life cycle methods you can use are:
