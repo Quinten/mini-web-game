@@ -11,13 +11,13 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: Setup Node.js for use with actions
-          uses: actions/setup-node@v1.1.0
+          uses: actions/setup-node@v4
           with:
-            version:  16.8
+            version:  21
           env:
             ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
         - name: Checkout branch
-          uses: actions/checkout@v2
+          uses: actions/checkout@v4
           env:
            ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
