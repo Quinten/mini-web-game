@@ -1,7 +1,7 @@
 import {system} from 'mini-web-game-system';
 
 let cacheName = 'mini-web-game';
-let cachedUrls = ['index.html'];
+let cachedUrls = [];
 
 let {start, PRECACHE_URLS} = system.sw;
 PRECACHE_URLS.push(...cachedUrls);
