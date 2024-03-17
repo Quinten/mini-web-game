@@ -19,7 +19,7 @@ No need to use a GUI editor for images or sound. You can write it in code. Even 
 
 ### Some variables to take care of
 
-Change the `PROJECT_NAME` in `.env` to the name of your project. This is used in the `manifest.json`, as prefix for `localStorage` keys, the document title and the cache key for the service worker.
+Change the title tag in `src/index.html` to the name of your project. This is used in the `manifest.json`, as prefix for `localStorage` keys.
 
 The `description` meta tag in `src/index.html`. This will also be used in the `manifest.json`.
 
