@@ -13,8 +13,6 @@ Uses [parcel](https://parceljs.org/) as a build tool.
 - Mouse and touch controls with `pointer` component
 - Sound and music with the `sound` component
 
-No need to use a GUI editor for images or sound. You can write it in code. Even the icons for the PWA.
-
 ## Things to mod
 
 ### Some variables to take care of
@@ -25,7 +23,11 @@ The `description` meta tag in `src/index.html`. This will also be used in the `m
 
 The inline `background` style of the `body` in `src/index.html`. This is also used to generate the `manifest.json`.
 
+Change `cacheName` in `src/sw.js` to something unique. This is used to cache the pwa files.
+
 ### Changing the icons
+
+Todo: update this section
 
 Use `src/icons.js` to change the applications pwa icons and favicons. This file uses the canvas api to create your icons.
 
@@ -150,9 +152,12 @@ npm run zip
 
 Runs the build and then makes a zip. Also counts the bytes of the zip.
 
+```
+npm link mini-web-game-components mini-web-game-system
+```
+
+For core development, link the core packages to the project.
+
 ## Deploy to gh-pages with gh-actions
 
 When pushing on the master branch, a build is deployed automatically to github pages. To make it run correctly, add a secret to the settings of your repo named `ACCESS_TOKEN`. This github token should have write permissions to repos.
-
-
-
