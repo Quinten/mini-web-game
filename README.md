@@ -25,11 +25,9 @@ The inline `background` style of the `body` in `src/index.html`. This is also us
 
 Change `cacheName` in `src/sw.js` to something unique. This is used to cache the pwa files.
 
-### Changing the icons
+### Changing the icon
 
-Todo: update this section
-
-Use `src/icons.js` to change the applications pwa icons and favicons. This file uses the canvas api to create your icons.
+Use `src/icon.js` to change the applications pwa icons and favicons. The canvas api is used to create the icon. The width and height of the icon is 1024 pixels.
 
 ### Adding data and objects to your game
 

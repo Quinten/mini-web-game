@@ -2,6 +2,7 @@ import entities from './entities.js';
 import {components} from 'mini-web-game-components';
 import customComponents from './components';
 import {system} from 'mini-web-game-system';
+import icon from './icon.js';
 
 try {
     if (process.env.NODE_ENV === 'production') {
@@ -17,6 +18,6 @@ try {
 } catch (err) {}
 
 let allComponents = {...components, ...customComponents};
-system.game(entities, allComponents);
+system.game(entities, allComponents, icon.iconDraw);
 
 export default {};
