@@ -24,7 +24,10 @@ let draw = c => {
     let {ctx} = c;
     let {x, y, width, height, fill} = c.component;
     ctx.fillStyle = fill;
-    ctx.fillRect(x, y, width, height);
+    ctx.fillRect(x + width*5/16, y + height/2, width*3/8, height/2);
+    ctx.beginPath();
+    ctx.arc(x + width/2, y + height*13/32, width*13/32, 0, Math.PI * 2);
+    ctx.fill();
 };
 
 export default Object.freeze({

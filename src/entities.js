@@ -16,9 +16,9 @@ export default {
     input: {
         pointer: {}
     },
-    player: {
-        fillrect: {
-            fill: 'white',
+    bulboff: {
+        bulb: {
+            fill: 'gray',
             x: 8,
             y: 8,
             width: 240,
@@ -32,9 +32,9 @@ export default {
             nClicks: 0
         }
     },
-    enemy: {
-        fillrect: {
-            fill: 'lightblue',
+    bulbon: {
+        bulb: {
+            fill: 'white',
             x: 8,
             y: 8,
             width: 240,
@@ -51,12 +51,12 @@ export default {
     },
     test: {
         state: {
-            entities: ['player']
+            entities: ['bulboff']
         }
     },
     testx: {
         state: {
-            entities: ['enemy']
+            entities: ['bulbon']
         }
     }
 };

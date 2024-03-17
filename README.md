@@ -75,8 +75,8 @@ One `system` entity with a `states` component is required to call all other syst
     input: {
         pointer: {}
     },
-    mySquare: {
-        fillrect: {
+    myBulb: {
+        bulb: {
             fill: 'white',
             x: 8,
             y: 8,
@@ -87,19 +87,19 @@ One `system` entity with a `states` component is required to call all other syst
     },
     myScene: {
         state: {
-            entities: ['mySquare']
+            entities: ['myBulb']
         }
     }
 }
 ```
 
-This renders a white square that dissapears when clicked. The line `next: ['game']` removes `myScene` from the active states.
+This renders a white light bulb that dissapears when clicked. The line `next: ['game']` removes `myScene` from the active states.
 
 ### Adding logic
 
 When you add a new component, do not forget to import and export it in `src/components/index.js`.
 
-Use `src/components/fillrect.js` as an example of how to create logic for your components. The component life cycle methods you can use are:
+Use `src/components/bulb.js` as an example of how to create logic for your components. The component life cycle methods you can use are:
 
 1. preupdate
 2. update

@@ -1,5 +1,5 @@
-import fillrect from './fillrect.js';
+import bulb from './bulb.js';
 
 export default Object.freeze({
-    fillrect
+    bulb
 });
