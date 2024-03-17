@@ -1,5 +1,6 @@
 import entities from './entities.js';
 import {components} from 'mini-web-game-components';
+import customComponents from './components';
 import {system} from 'mini-web-game-system';
 
 try {
@@ -15,6 +16,7 @@ try {
     }
 } catch (err) {}
 
-system.game(entities, components);
+let allComponents = {...components, ...customComponents};
+system.game(entities, allComponents);
 
 export default {};
