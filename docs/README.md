@@ -14,7 +14,7 @@ You can add your own components in the `src/components` folder. The `src/entitie
 
 - Installable as PWA
 - Entity Component System
-- Responsive canvas `resize` component
+- Responsive `canvas` component
 - Persistent `data` component
 - Mouse and touch controls with `pointer` component
 - Sound and music with the `sound` component
@@ -75,7 +75,7 @@ One `system` entity with a `states` component is required to call all other syst
         }
     },
     viewport: {
-        resize: {
+        canvas: {
             minWidth: 256,
             minHeight: 256
         }
@@ -131,6 +131,7 @@ Each lifecycle method has exactly one parameter `c` which is an object with the 
 - `delta` (time elapsed since last frame)
 - `time` (time elapsed since start of the game)
 - `ctx` (the canvas drawing context)
+- `canvas` (the canvas element)
 
 ## Useful commands
 

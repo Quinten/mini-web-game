@@ -8,7 +8,7 @@ export default {
         }
     },
     viewport: {
-        resize: {
+        canvas: {
             minWidth: 256,
             minHeight: 256
         }
