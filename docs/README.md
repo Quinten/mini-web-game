@@ -1,4 +1,4 @@
-# Mini web game documentation
+# Mini web game docs
 
 Welcome to the mini‐web‐game documentation!
 
