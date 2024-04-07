@@ -1,6 +1,6 @@
 let update = c => {
-    let {pointer} = c.entities.input;
-    let {component, entity} = c;
+    let {component, entities, entity} = c;
+    let {pointer} = entities.input;
     let {x, y, width, height} = component;
     if (
         pointer.x < x || pointer.x > width + x
@@ -16,13 +16,13 @@ let update = c => {
         if (entity.data !== undefined && entity.data.nClicks !== undefined) {
             entity.data.nClicks = entity.data.nClicks + 1;
         }
-        c.entities.system.states = component.next;
+        entities.system.states = component.next;
     }
 };
 
 let draw = c => {
-    let {ctx} = c;
-    let {x, y, width, height, fill} = c.component;
+    let {component, ctx} = c;
+    let {x, y, width, height, fill} = component;
     ctx.fillStyle = fill;
     ctx.fillRect(x + width*5/16, y + height/2, width*3/8, height/2);
     ctx.beginPath();
