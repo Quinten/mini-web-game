@@ -19,7 +19,7 @@ You can add your own components in the `src/components` folder. The `src/entitie
 - Mouse and touch controls with `pointer` component
 - Sound and music with the `sound` component
 - Graphics can be made with just code and also the favicon and pwa icons and even the sounds
-- Uses the canvas 2d context for the moment, but webgl is on the roadmap
+- Uses the canvas 2d context (for the moment?)
 
 ## Things to mod
 
